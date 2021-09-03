@@ -1,0 +1,85 @@
+<!-- This code is written by
+Name - Kuldeep Kumar
+Class Roll no - 19HCS4028
+University Exam roll no - 19015570017
+Course Name - Bsc (Hons) Computer Science
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5 Assignment</title>
+<style>
+    .grid {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+div > button {
+  padding: 10px;
+  background-color: rgb(243, 236, 236);
+  margin: 10%;
+}
+
+
+</style>
+
+</head>
+<body>
+<p id="demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere modi temporibus quae, sed ullam accusamus repellendus numquam architecto non dolore consequuntur nobis voluptatem ut rem!</p>
+
+<div class="grid">
+    <button style="background-color: red; color: white;" onclick="change_to_red()">Red </button>
+    <button style="background-color: green; color: white;" onclick="change_to_green()">Green </button>
+    <button style="background-color: blue; color: white;" onclick="change_to_blue()">Blue </button>
+    <button style="font-size: 10px;" onclick="change_to_10()"><strong>10</strong></button>
+    <button style="font-size: 20px;" onclick="change_to_20()"><strong>20</strong></button>
+    <button style="font-size: 30px;" onclick="change_to_30()"><strong>30</strong></button>
+    <button style="font-family: 'Courier New'" onclick="change_to_courier()">Courier New</button>
+    <button style="font-family: 'Franklin Gothic Medium;'" onclick="change_to_franklin()">Franklin</button>
+    <button style="font-family: 'Segoe UI';" onclick="change_to_segoe()">Segoe</button>
+  </div>
+
+<script>
+
+// Functions to change color
+function change_to_red() {
+  document.getElementById("demo").style.color = "red";
+}
+function change_to_green() {
+  document.getElementById("demo").style.color = "green";
+}
+function change_to_blue() {
+  document.getElementById("demo").style.color = "blue";
+}
+
+// Functions to change font size
+function change_to_10() {
+  document.getElementById("demo").style.fontSize = "10px";
+}
+function change_to_20() {
+    document.getElementById("demo").style.fontSize = "20px";
+}
+function change_to_30() {
+    document.getElementById("demo").style.fontSize = "30px";
+}
+
+// Functions to change font family
+function change_to_courier() {
+  document.getElementById("demo").style.fontFamily = 'Courier New';
+}
+function change_to_franklin() {
+  document.getElementById("demo").style.fontFamily = 'Franklin Gothic Medium';
+}
+function change_to_segoe() {
+  document.getElementById("demo").style.fontFamily = 'Segoe UI';
+}
+</script>
+
+</body>
+</html>
